@@ -40,7 +40,7 @@ class ProfilesActivity : AppCompatActivity() {
         viewmodel.profiles.observe(this) {
             gridAdapter.setList(it)
             println(it)
-            binding.workerName.text = it.first().firstName
+            binding.workerName.text = it.shuffled().first().firstName
         }
     }
 }
