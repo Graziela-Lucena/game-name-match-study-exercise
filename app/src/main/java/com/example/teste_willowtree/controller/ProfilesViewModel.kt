@@ -9,7 +9,7 @@ import com.example.teste_willowtree.data.repository.ProfilesRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class ProfilesViewModel(private val repository: ProfilesRepository): ViewModel() {
+class ProfilesViewModel(private val repository: ProfilesRepository) : ViewModel() {
     private val _profiles = MutableLiveData<List<WorkersData>>()
     private val _loading = MutableLiveData<Boolean>()
     val profiles: LiveData<List<WorkersData>> = _profiles

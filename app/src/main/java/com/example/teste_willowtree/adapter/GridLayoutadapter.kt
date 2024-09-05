@@ -8,10 +8,10 @@ import coil.load
 import com.example.teste_willowtree.data.models.WorkersData
 import com.example.teste_willowtree.databinding.WorkerItemBinding
 
-class GridLayoutadapter() : RecyclerView.Adapter<WorkerViewHolder>(){
+class GridLayoutadapter() : RecyclerView.Adapter<WorkerViewHolder>() {
     private var workersList: List<WorkersData> = mutableListOf()
 
-    fun setList(list: List<WorkersData>){
+    fun setList(list: List<WorkersData>) {
         workersList = list
         notifyDataSetChanged()
     }
@@ -28,7 +28,7 @@ class GridLayoutadapter() : RecyclerView.Adapter<WorkerViewHolder>(){
     }
 }
 
-class WorkerViewHolder(itemBinding: WorkerItemBinding) : ViewHolder(itemBinding.root){
+class WorkerViewHolder(itemBinding: WorkerItemBinding) : ViewHolder(itemBinding.root) {
     val img = itemBinding.workerPhoto
     fun bind(item: WorkersData) {
         img.load(item.headshot.url)

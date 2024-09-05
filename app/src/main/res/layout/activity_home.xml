@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.HomeActivity"
-    android:background="@drawable/background_img">
+    android:background="@drawable/background_img"
+    tools:context=".ui.HomeActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,24 +15,24 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/practice_mode_button"
             android:text="Try matching the WillowTree Employee to their photo"
+            android:textAlignment="center"
             android:textColor="@color/white"
-            android:textAlignment="center"/>
+            app:layout_constraintBottom_toTopOf="@+id/practice_mode_button" />
 
         <Button
             android:id="@+id/practice_mode_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@id/time_mode_button"
-            android:text="Practice Mode" />
+            android:text="Practice Mode"
+            app:layout_constraintBottom_toTopOf="@id/time_mode_button" />
 
         <Button
             android:id="@+id/time_mode_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:text="Timed Mode"/>
+            android:text="Timed Mode"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -29,13 +29,13 @@ class ProfilesActivity : AppCompatActivity() {
         setupViewmodel()
     }
 
-    private fun setupGridProfiles(){
+    private fun setupGridProfiles() {
         val grid = binding.gridProfiles
         gridAdapter = GridLayoutadapter()
         grid.adapter = gridAdapter
     }
 
-    private fun setupViewmodel(){
+    private fun setupViewmodel() {
         viewmodel.loadProfiles()
         viewmodel.profiles.observe(this) {
             gridAdapter.setList(it)

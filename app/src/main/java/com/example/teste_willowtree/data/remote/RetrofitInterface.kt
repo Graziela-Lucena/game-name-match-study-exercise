@@ -6,5 +6,5 @@ import retrofit2.http.GET
 interface RetrofitInterface {
 
     @GET("/api/v1.0/profiles")
-    suspend fun getProfiles() : WorkersDataList
+    suspend fun getProfiles(): WorkersDataList
 }

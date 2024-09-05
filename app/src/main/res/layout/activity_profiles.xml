@@ -6,28 +6,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.ProfilesActivity">
-<TextView
-    android:id="@+id/worker_name"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:text="WORKER NAME"
-    app:layout_constraintBottom_toTopOf="@id/grid_profiles"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    />
 
-<androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/grid_profiles"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="20dp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:spanCount="2"
-    tools:itemCount="6"
-    tools:listitem="@layout/worker_item" />
+    <TextView
+        android:id="@+id/worker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/grid_profiles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="WORKER NAME" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/grid_profiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:spanCount="2"
+        tools:itemCount="6"
+        tools:listitem="@layout/worker_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

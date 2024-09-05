@@ -26,12 +26,13 @@ class HomeActivity : AppCompatActivity() {
         binding.practiceModeButton.setOnClickListener { goPracticeMode() }
     }
 
-    private fun goTimedMode(){
+    private fun goTimedMode() {
 
     }
 
-    private fun goPracticeMode(){
+    private fun goPracticeMode() {
         Intent(this, ProfilesActivity::class.java).apply {
-            startActivity(this) }
+            startActivity(this)
+        }
     }
 }
